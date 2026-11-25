@@ -22,7 +22,7 @@ Install LM Studio (CLI + AppImage) per user for Debian 13 (trixie)
 
 ## Dependencies
 
-- `odem.base.identity`
+- `odem.users.user`
 
 ## Example usage
 

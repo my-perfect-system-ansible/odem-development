@@ -21,4 +21,4 @@ galaxy_info:
     - jdk
     - odem-development
 dependencies:
-  - role: odem.base.identity
+  - role: odem.users.user

@@ -20,7 +20,7 @@ Install Espressif IoT Development Framework (multi-version, per-user)
 
 ## Dependencies
 
-- `odem.base.identity`
+- `odem.users.user`
 
 ## Example usage
 

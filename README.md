@@ -35,14 +35,14 @@ ansible-galaxy collection install odem.development
 - hosts: all
   become: true
   vars:
-    users_catalog:
+    user_catalog:
       dev01:
         user_roles:
           development_opencode: true
           development_java: true
           development_dotnet: true
   roles:
-    - odem.base.identity
+    - odem.users.user
     - odem.development.opencode
     - odem.development.java
     - odem.development.dotnet

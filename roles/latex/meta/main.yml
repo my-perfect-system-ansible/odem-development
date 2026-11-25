@@ -22,4 +22,4 @@ galaxy_info:
     - typesetting
     - odem-development
 dependencies:
-  - role: odem.base.identity
+  - role: odem.users.user
