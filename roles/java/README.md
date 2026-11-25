@@ -16,7 +16,7 @@ Install default JDK and JRE for Debian 13 (trixie)
 
 ## Dependencies
 
-- `odem.users.user`
+- `odem.os.user`
 
 ## Example usage
 

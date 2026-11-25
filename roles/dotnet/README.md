@@ -18,7 +18,7 @@ Install .NET SDK via the official dotnet-install.sh script
 
 ## Dependencies
 
-- `odem.users.user`
+- `odem.os.user`
 
 ## Example usage
 

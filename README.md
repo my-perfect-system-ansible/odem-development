@@ -42,7 +42,7 @@ ansible-galaxy collection install odem.development
           development_java: true
           development_dotnet: true
   roles:
-    - odem.users.user
+    - odem.os.user
     - odem.development.opencode
     - odem.development.java
     - odem.development.dotnet

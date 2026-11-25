@@ -23,7 +23,7 @@ Install Unity Hub + VSCode for Debian 13 (trixie)
 
 ## Dependencies
 
-- `odem.users.user`
+- `odem.os.user`
 
 ## Example usage
 

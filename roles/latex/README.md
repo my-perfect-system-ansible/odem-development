@@ -16,7 +16,7 @@ Install texlive-full for Debian 13 (trixie)
 
 ## Dependencies
 
-- `odem.users.user`
+- `odem.os.user`
 
 ## Example usage
 

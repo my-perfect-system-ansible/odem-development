@@ -23,7 +23,7 @@ Install OpenCode CLI + per-user dotfiles (~/.config/opencode, ~/.claude)
 
 ## Dependencies
 
-- `odem.users.user`
+- `odem.os.user`
 
 ## Example usage
 

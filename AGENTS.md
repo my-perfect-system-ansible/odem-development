@@ -24,6 +24,6 @@ single-file `tasks/main.yml` (flattened in this refactor pass).
 
 ## Conventions
 
-- All per-user loops use `block:` wrappers with `loop: "{{ user_resolved | odem.users.odem_filter_users('development_<x>') }}"`.
+- All per-user loops use `block:` wrappers with `loop: "{{ user_resolved | odem.os.odem_filter_users('development_<x>') }}"`.
 - Multi-version loops (espidf) nest inside the per-user block: block iterates per user, inner task iterates over `espidf_versions`.
 - Stat-gated installs (`opencode`, `lmstudio`) skip the download step if the binary already exists.
