@@ -1,0 +1,5 @@
+---
+
+pi_installer_url: "https://pi.dev/install.sh"
+pi_installer_path: /tmp/pi-install.sh
+pi_cli_bin: .local/bin/pi

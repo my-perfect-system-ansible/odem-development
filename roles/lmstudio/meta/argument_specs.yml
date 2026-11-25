@@ -1,6 +1,6 @@
 argument_specs:
   main:
-    short_description: Install LM Studio (CLI + AppImage) per user for Debian 13 (trixie)
+    short_description: Install LM Studio (CLI + AppImage) per user
     options:
       lmstudio_cli_installer_url:
         type: str

@@ -1,0 +1,19 @@
+argument_specs:
+  main:
+    short_description: Install pi coding agent per user
+    options:
+      pi_installer_url:
+        type: str
+        required: false
+        default: https://pi.dev/install.sh
+        description: URL of the pi installer script
+      pi_installer_path:
+        type: str
+        required: false
+        default: /tmp/pi-install.sh
+        description: Where the installer script is staged
+      pi_cli_bin:
+        type: str
+        required: false
+        default: .local/bin/pi
+        description: Home-relative path where the pi binary lands after install

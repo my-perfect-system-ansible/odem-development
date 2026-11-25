@@ -1,6 +1,6 @@
 argument_specs:
   main:
-    short_description: Install Unity Hub + VSCode for Debian 13 (trixie)
+    short_description: Install Unity Hub + VSCode
     options:
       unity_key_url:
         type: str
@@ -16,7 +16,7 @@ argument_specs:
         type: str
         required: false
         default: https://hub.unity3d.com/linux/repos/deb
-        description: Unity Hub APT repository base URL
+        description: Unity Hub repository base URL (Debian .deb)
       unity_repo_state:
         type: str
         required: false
@@ -24,20 +24,20 @@ argument_specs:
         choices:
         - present
         - absent
-        description: State of the Unity Hub APT repository entry
+        description: State of the Unity Hub repository entry
       unity_repo_components:
         type: list
         required: false
         default:
         - stable
         - main
-        description: APT repository components for the Unity Hub repo
+        description: Repository components for the Unity Hub repo
       unity_packages:
         type: list
         required: false
         default:
         - unityhub
-        description: Apt packages to install from the Unity Hub repo
+        description: Packages to install from the Unity Hub repo (Debian defaults)
       unity_enable_vscode:
         type: bool
         required: false

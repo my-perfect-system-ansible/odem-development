@@ -1,0 +1,34 @@
+---
+- name: Ensure per-user .local/bin directory exists
+  ansible.builtin.file:
+    path: "{{ entity.home }}/.local/bin"
+    state: directory
+    owner: "{{ entity.name }}"
+    group: "{{ entity.group | default(entity.name) }}"
+    mode: "0700"
+  loop: "{{ identity_users_resolved }}"
+  loop_control:
+    loop_var: entity
+    label: "{{ entity.name }}"
+  when:
+    - entity.user_roles.development_pi | default(false)
+    - entity.state == 'present'
+
+- name: Download pi installer
+  ansible.builtin.get_url:
+    url: "{{ pi_installer_url }}"
+    dest: "{{ pi_installer_path }}"
+    mode: "0755"
+  become: true
+
+- name: Install pi coding agent per user
+  ansible.builtin.command:
+    cmd: sudo -u {{ entity.name }} /bin/bash {{ pi_installer_path }}
+    creates: "{{ entity.home }}/{{ pi_cli_bin }}"
+  loop: "{{ identity_users_resolved }}"
+  loop_control:
+    loop_var: entity
+    label: "{{ entity.name }}"
+  when:
+    - entity.user_roles.development_pi | default(false)
+    - entity.state == 'present'
