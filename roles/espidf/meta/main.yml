@@ -22,5 +22,4 @@ galaxy_info:
     - embedded
     - iot
     - odem-development
-dependencies:
-  - role: odem.os.user
+dependencies: []

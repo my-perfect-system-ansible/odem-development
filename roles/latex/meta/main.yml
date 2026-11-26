@@ -21,5 +21,4 @@ galaxy_info:
     - texlive
     - typesetting
     - odem-development
-dependencies:
-  - role: odem.os.user
+dependencies: []

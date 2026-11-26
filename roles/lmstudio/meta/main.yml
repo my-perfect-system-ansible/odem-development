@@ -22,5 +22,4 @@ galaxy_info:
     - ml
     - ai
     - odem-development
-dependencies:
-  - role: odem.os.user
+dependencies: []

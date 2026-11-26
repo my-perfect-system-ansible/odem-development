@@ -20,5 +20,4 @@ galaxy_info:
     - java
     - jdk
     - odem-development
-dependencies:
-  - role: odem.os.user
+dependencies: []
