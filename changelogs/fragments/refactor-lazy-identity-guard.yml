@@ -1,0 +1,10 @@
+---
+# Fragment for the lazy identity guard refactor (2026-11-26).
+# Compiles into changelogs/changelog.yaml at release time.
+removed_features:
+  - |
+    All 8 roles no longer meta-depend on `odem.os.user`. Only `pi` consumes
+    identity data — it resolves the facts lazily via a first-task
+    `include_role {name: odem.os.user, tasks_from: identity.yml, public: true}`
+    guard; the other 7 roles carry neither guard nor dependency. Standalone role
+    application no longer creates or touches user accounts.
